@@ -4,14 +4,24 @@ A meaningful project that analyzes daily sleep habits, stores your progress, vis
 
 🖼️ 📌 Project Preview
 
+
 🏠 Home Page
+
+
 <img width="468" height="706" alt="image" src="https://github.com/user-attachments/assets/c3265832-8ebe-4dbd-b43b-b3cb8d8c0851" />
 
+
 it even has dark and kight mode feature 
+
+
 <img width="463" height="701" alt="image" src="https://github.com/user-attachments/assets/65b03c51-d4f0-4c6f-8bc6-a12b477910fe" />
 
+
 🧮 Sleep Score Result
+
+
 <img width="677" height="697" alt="image" src="https://github.com/user-attachments/assets/f7b51eb1-9b3c-4072-84ed-58937d31f4fc" />
+
 
 📊 Trend Graph (Matplotlib)
 
