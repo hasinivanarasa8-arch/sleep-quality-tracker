@@ -1,95 +1,95 @@
-🌙✨ Sleep Quality Checker — AI-Assisted Sleep Insight Tool
+# 🌙 Sleep Quality Tracker (ML + Tkinter GUI)
 
-A meaningful project that analyzes daily sleep habits, stores your progress, visualizes trends, and suggests ways to improve your wellbeing. This blends technology + health, showing how simple data can create real impact.
+A clean, minimalistic, beginner‑friendly yet professional *Sleep Tracking Desktop App* built using:
 
-🖼️ 📌 Project Preview
+- *Python*
+- *Tkinter (Custom Themed UI)*
+- *Matplotlib (Optional Charts)*
+- *Pickle‑based ML Model*
+- *Local JSON Storage for History*
+
+The app predicts *Sleep Quality Score, stores daily data, and visualizes your weekly progress — with **Dark Mode*, rounded buttons, and smooth nonchalant styling.
+
+## 🚀 Features
+
+### ✔ Machine Learning Prediction  
+Predicts sleep quality based on:  
+- Sleep Hours  
+- Stress Level  
+- Screen Time  
+- Exercise Minutes  
+
+### ✔ Dark Mode Toggle  
+Switch themes instantly.
+
+### ✔ Weekly Graphs  
+- Shows only days with real entered data  
+- Missing days remain *blank*  
+- Toggle graph visibility with one button  
+
+### ✔ Local History  
+Each prediction is saved to:
+
+sleep_history.json
+
+Meaning your data stays on your device.
+
+## 📁 Project Structure
+
+📦 SleepTracker ┣ 📜 app.py ┣ 📜 sleep_model.pkl ┣ 📜 sleep_history.json  (auto created)┣ 📜 sleep_model.py ┗ 📜 README.md
 
 
-🏠 Home Page
+## 🛠 Installation & Setup
+
+### *1️⃣ Install Requirements*
+```bash
+pip install numpy matplotlib
+
+2️⃣ Place Your Model
+
+Make sure this file exists:
+
+sleep_model.pkl
+
+3️⃣ Run the App
+
+python app.py
 
 
-<img width="468" height="706" alt="image" src="https://github.com/user-attachments/assets/c3265832-8ebe-4dbd-b43b-b3cb8d8c0851" />
+📸 Screenshots 
+
+1. Home Screen – Light Mode
+
+<img width="475" height="708" alt="image" src="https://github.com/user-attachments/assets/d83b5250-f6a8-4b19-bae4-f8d0a5ad2e9e" />
 
 
-it even has dark and kight mode feature 
+2. Home Screen – Dark Mode
+
+<img width="465" height="702" alt="image" src="https://github.com/user-attachments/assets/35d58336-1288-4705-9f68-998070a5e24a" />
 
 
-<img width="463" height="701" alt="image" src="https://github.com/user-attachments/assets/65b03c51-d4f0-4c6f-8bc6-a12b477910fe" />
+3. Prediction Output
+
+<img width="651" height="703" alt="image" src="https://github.com/user-attachments/assets/c970a2fd-0766-43c5-9576-253d4871495b" />
 
 
-🧮 Sleep Score Result
+4. Weekly Graph Closed
+
+5. Weekly Graph Opened With Data
 
 
-<img width="677" height="697" alt="image" src="https://github.com/user-attachments/assets/f7b51eb1-9b3c-4072-84ed-58937d31f4fc" />
+6. Example Error Handling (Invalid Input)
+
+<img width="657" height="700" alt="image" src="https://github.com/user-attachments/assets/c707c981-87aa-4600-8874-0de366582d69" />
 
 
-📊 Trend Graph (Matplotlib)
 
+🧠 How Prediction Works
 
-🌟 Why I Built This Project
+The ML model takes inputs:
 
-I created this project because I’ve always been curious about how AI can improve healthcare and everyday wellbeing. Even though I’m from an MPC background, my interest in biology hasn’t faded. I wanted to build something practical—something that helps people reflect on their habits.
+[ sleep_hours, stress_level, screen_time, exercise_minutes ]
 
-Sleep affects memory, focus, mood, stress levels, productivity—basically everything.
-This project reflects my motive to use AI + data to make life healthier and easier.
+And outputs a sleep score (0–100).
 
-🧩 What This Project Does
-
-✔ Collects sleep & lifestyle inputs
-✔ Calculates a sleep score out of 100
-✔ Logs each day’s entry into a JSON file
-✔ Plots score trends using Matplotlib
-✔ Gives practical suggestions
-✔ Provides a simple and clean Streamlit UI
-
-🔧 Tech Stack
-
-Python
-
-Streamlit – UI
-
-JSON – data storage
-
-Matplotlib – graph visualization
-
-NumPy – scoring logic
-
-🎢 My Struggles & Learning Journey
-
-This project taught me a lot:
-
-How to store and update JSON files safely
-
-How to generate Matplotlib graphs inside Streamlit
-
-How to build clean UI layouts
-
-Debugging data, plotting, and logic issues
-
-Organizing a real-world mini project
-
-I restarted parts of it, fixed issues, and learned from every error. That’s what makes this project special — it’s something I built step by step with effort, curiosity, and consistency.
-
-🚀 Features
-
-🧮 Sleep scoring
-
-📊 Matplotlib trend chart
-
-🗂 JSON-based data logging
-
-🧠 Smart suggestions
-
-🌙 Minimal, smooth UI
-
-🔍 Helpful insights on habits
-
-🛠️ How to Run
-
-pip install streamlit matplotlib numpy
-streamlit run app.py
-
-🌱 My Vision
-
-This project is a small step toward my bigger goal of creating AI-driven healthcare applications.
-Even though it started as a simple idea, it represents my curiosity, discipline, and willingness to learn and build useful things.
+---
